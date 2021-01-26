@@ -1,0 +1,13 @@
+.App-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    min-width: 320px;
+    background: cornflowerblue;
+}
+
+.App-router-switch {
+    margin-left: 30%;
+}
