@@ -3,18 +3,11 @@ import "./ContractList.css"
 
 export class ContractList extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            contractList: this.props.contractList
-        }
-    }
-
     render() {
         return <div className="ContractList">
             <p>Mes contrats : </p>
             {
-                this.state.contractList.map(c =>
+                this.props.contractList.map(c =>
                     <ContractDetails key={c.id} contract={c} />)
             }
         </div>;
